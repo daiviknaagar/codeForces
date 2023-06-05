@@ -1,0 +1,25 @@
+<!-- header -->
+<%- include('partials/head') %>
+
+    <!-- navbar -->
+    <%- include('partials/navbarOpen') %>
+
+        <div class="container">
+            <form action="/register" method="POST">
+                <div class="login">
+                    <div>
+                        <input type="text" class="enter" name="username" id="username" placeholder="username">
+                    </div>
+                    <div>
+                        <input type="text" class="enter" name="codeforces" id="codeforces" placeholder="codeforces ID">
+                    </div>
+                    <div>
+                        <input type="password" class="enter" name="password" id="password" placeholder="password">
+                    </div>
+                    <button class="button">sign up</button>
+                </div>
+            </form>
+        </div>
+        </body>
+
+        </html>

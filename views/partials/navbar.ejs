@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: greenyellow;">
+    <a class="navbar-brand" style="color: #000; font-weight: 700;" href="#">codeForces</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" style="color: #000;" href="/home">Home</a>
+            <a class="nav-item nav-link" style="color: #000;" href="/contests">contestList</a>
+            <form class="form-inline" style="display: inline-flex;" action="/userInfo">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input type="search" name="handles" class="form-control my-2 my-sm-0" style="margin-right: 5px;"
+                    id="inlineFormInputGroup" placeholder="Username">
+                <button class="btn btn-outline-dark my-2 my-sm-0" style="margin-right: 5px;"
+                    type="submit">search</button>
+            </form>
+            <form class="form-inline" style="display: inline-flex; margin-right: 5px;" action="/logout" method="POST">
+                <button class="btn btn-outline-dark my-2 my-sm-0">logOut</button>
+            </form>
+        </div>
+    </div>
+</nav>

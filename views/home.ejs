@@ -1,0 +1,29 @@
+<!-- header -->
+<%- include('partials/head') %>
+
+    <!-- navbar -->
+    <%- include('partials/navbar') %>
+        <div class="container">
+            <h1>homePage</h1>
+            <div class="users">
+                <% for(let i=0; i<u.track.length; i++) { %>
+                    <div class="user">
+                        <div class="upper">
+                            <h2>
+                                <%= u.track[i].codeforces %>
+                            </h2>
+                            <img src=<%=u.track[i].img %> alt="no pic">
+                        </div>
+                        <p><b>rating-<%= u.track[i].rating %></b>
+                        </p>
+                        <p><b>maxRating-<%= u.track[i].maxRating %></b>
+                        </p>
+                        <!-- <p>rating change in last contest-(<%= u.track[i].diff %>) -->
+                        </p>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+        </body>
+
+        </html>

@@ -1,0 +1,20 @@
+<!-- header -->
+<%- include('partials/head') %>
+
+    <!-- navbar -->
+    <%- include('partials/navbar') %>
+
+        <div class="container">
+            <h1>list of contests</h1>
+            <% for(let i=p.length-1; i>=0; i--){ %>
+                <b class="cont">
+                    <%= p[i].name %>
+                </b>-<% var d=new Date(0) %>
+                    <% d.setUTCSeconds(p[i].startTimeSeconds) %>
+                        <%= d %><br>
+                            <% } %>
+        </div>
+
+        </body>
+
+        </html>

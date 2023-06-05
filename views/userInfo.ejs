@@ -1,0 +1,31 @@
+<!-- header -->
+<%- include('partials/head') %>
+
+    <!-- navbar -->
+    <%- include('partials/navbar') %>
+
+        <div class="container">
+            <form action="/userInfo" method="POST" class="form-inline">
+                <div class="userU">
+                    <div class="upper">
+                        <h1>
+                            <%= p[0].handle %>
+                        </h1>
+                        <img src=<%=p[0].avatar %> alt="no pic">
+                    </div>
+                    <p>rating-<%= p[0].rating %>
+                    </p>
+                    <p>maxRating-<%= p[0].maxRating %>
+                    </p>
+                    <!-- <p>rating change in last contest-(<%= k %>) -->
+                    </p>
+                </div>
+                <div class="trackBtn">
+                    <button class="bb">track</button>
+                </div>
+            </form>
+        </div>
+
+        </body>
+
+        </html>
